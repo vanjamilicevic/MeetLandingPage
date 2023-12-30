@@ -36,9 +36,13 @@ body {
     margin-left: -30px;
 }
 
-.title-description-buttons {
+.title-description-buttons-large-screen {
     max-width: 550px;
     text-align: center;
+}
+
+.title-description-buttons-tablet {
+    display: none;
 }
 
 .title-container {
@@ -276,4 +280,93 @@ body {
 
 .footer-v13 {
     color: #D9B8FF;
+}
+
+
+/* --------------Media queries-------------- */
+
+/* Tablet design */
+
+@media only screen and (max-width: 1081px) {
+
+    .title-description-buttons-large-screen {
+        display: none;
+    }
+
+    .title-and-images {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .left-image-section {
+        width: 50%;
+    }
+
+    .left-image {
+        width: 100%;
+        margin-left: -20px;
+    }
+
+    .right-image-section {
+        width: 50%;
+    }
+
+    .right-image {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .title-description-buttons-tablet {
+        display: block;
+        max-width: 550px;
+        margin: auto;
+        margin-bottom: 150px;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .description {
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .image-section {
+        width: 95%;
+    }
+
+    .image {
+        width: 23%;
+    }
+
+    .smarter-meetings-description {
+        font-size: 16px;
+    }
+
+    .footer-content-container {
+        display: inline;
+        text-align: center;
+    }
+
+    .footer-title-container {
+        width: 50%;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    .footer-description-container {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .footer-button {
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 50px;
+    }
 }
